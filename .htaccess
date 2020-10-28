@@ -1,0 +1,33 @@
+RewriteEngine On
+
+RewriteRule ^API/login API/superadmin.php?login=1
+RewriteRule ^API/showAdmin API/superadmin.php?showAdmin=1
+RewriteRule ^API/addNewAdmin API/superadmin.php?addNewAdmin=1
+RewriteRule ^API/editAdmin API/superadmin.php?editAdmin=1
+RewriteRule ^API/deleteAdmin API/superadmin.php?deleteAdmin=1
+
+
+RewriteRule ^API/showAngsuran API/angsuran.php?showAngsuran=1
+RewriteRule ^API/showJurnal API/angsuran.php?showJurnal=1
+RewriteRule ^API/showRecons API/angsuran.php?showRecons=1
+RewriteRule ^API/showNRVPokok API/angsuran.php?showNRVPokok=1
+RewriteRule ^API/showNRVBunga API/angsuran.php?showNRVBunga=1
+RewriteRule ^API/addNewAngsuran API/angsuran.php?addNewAngsuran=1
+RewriteRule ^API/addNewBunga API/angsuran.php?addNewBunga=1
+RewriteRule ^API/deleteAngsuran API/angsuran.php?deleteAngsuran=1
+
+
+RewriteRule ^API/showNasabah API/nasabah.php?showNasabah=1
+RewriteRule ^API/addNewNasabah API/nasabah.php?addNewNasabah=1
+RewriteRule ^API/editNasabah API/nasabah.php?editNasabah=1
+RewriteRule ^API/deleteNasabah API/nasabah.php?deleteNasabah=1
+
+RewriteRule ^login superadmin/login.php
+RewriteRule ^admin/setting superadmin/index.php?pg=setting
+RewriteRule ^admin/akun superadmin/index.php?pg=akun
+RewriteRule ^admin/nasabah superadmin/index.php?pg=nasabah
+RewriteRule ^admin/bayar superadmin/index.php?pg=bayar
+RewriteRule ^admin/jurnal superadmin/index.php?pg=jurnal
+RewriteRule ^admin/recons superadmin/index.php?pg=recons
+RewriteRule ^admin/nrv superadmin/index.php?pg=nrv
+RewriteRule ^admin/riwayatpembayaran superadmin/index.php?pg=riwayatPembayaran
